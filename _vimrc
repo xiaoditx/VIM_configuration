@@ -15,6 +15,7 @@ set autowrite        " 在每次修改后自动保存并退出
 set cursorline       " 当前行高亮
 set linebreak        " 不可拆词，除非遇到空格或连词符等
 set laststatus=2     " 是否显示状态栏。0 表示不显示，1 表示只在多窗口时显示，2 表示显示
+set ttimeoutlen=70   " ..某种..刷新时间？防止ecs会使终端失去焦点
 set noundofile       " 保存撤销历史
 filetype indent on   " 文件类型检测并载入缩进规则
 set t_Co=256         " 256色模式
@@ -42,6 +43,8 @@ set guifont=Courier_New:h30 " 注：本设置仅对GUI生效，终端字体仅�
 " 配色方案
 colorscheme desert
 
+" 设置帮助文本为中文（插件实现）
+set helplang=cn
 
 " 可选的选项
 "
@@ -106,6 +109,9 @@ Plug 'jiangmiao/auto-pairs'
 " ----------------------------------
 " 状态栏美化
 Plug 'vim-airline/vim-airline'
+" ----------------------------------
+" 中文文档插件
+Plug 'vimcn/vimcdoc'
 " ----------------------------------
 " Vundle插件管理
 " Plugin 'gmarik/Vundle.vim'
