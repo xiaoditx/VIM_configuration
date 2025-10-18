@@ -1,5 +1,0 @@
-// 资源定义文件
-
-#define IDI_ICON1                       101
-
-IDI_ICON1               ICON                    "app_icon.ico"
